@@ -1,0 +1,86 @@
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de clientes</title>
+</head>
+<body style="padding: 500;; background-color: skyblue; padding-top: 0; padding-bottom: 0;">
+    <h1>Cadastro de clientes</h1>
+    <p style="color: red;">Todos os campos são de preenchimento obrigatório.</p>
+    <form>
+        <fieldset >
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome:</label><br>
+            <input required style=" width: 250px;" type="text" id="nome" placeholder="Nome completo">
+            <br><br>
+            <label for="dateNasc">Data de nascimento</label><br>
+            <input required type="date" id="dateNasc">
+            <br><br>
+            <label for="sexo">Sexo:</label><br>
+            <input required type="radio" name="sexo" value="Masculino"><label for="">Masculino</label>
+            <input required type="radio"  name="sexo" value="Feminino"><label for="">Feminino</label>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Informações de contato</legend>
+            <label for="email">Email:</label><br>
+            <input style=" width: 250px;" required type="email" id="email" >
+            <br><br>
+            <label for="tel">Telefone de celular</label><br>
+            <input style="width: 180px;" required type="tel" id="tel" maxlength="9" placeholder="Apenas números (max:9)">
+            <br><br>
+            <label for="webSite">Web site pessoal/profissional:</label><br>
+            <input style="width: 180px;" required type="url" id="webSite" >
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Localização</legend>
+            <label for="rua">Endereço:</label><br>
+            <input style="width: 250px;" required type="text" id="rua" >
+            <br><br>
+            <label for="num">Número</label><br>
+            <input style="width: 160px;"required type="number" id="num" min="1" max="9999" placeholder="(Valor entre 1 e 9999)">
+            <br><br>
+            <label for="cid">Cidade:</label><br>
+            <input style="width: 160px;" required type="text" id="cid" >
+            <br><br>
+            <label for="UF">Estado:</label><br>
+            <select required id="UF" name="UF">
+                <option value="">Selecione</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MS">MS</option>
+                <option value="MT">MT</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+             </select>
+
+        </fieldset>
+        <br>
+        <button type="submit">Cadastrar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+</html>
